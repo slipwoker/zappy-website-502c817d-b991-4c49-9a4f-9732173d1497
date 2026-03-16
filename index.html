@@ -242,6 +242,207 @@
     <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
     <!-- Mickidum Accessibility Toolbar -->
     <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+
+<style data-zappy-section-v2-css="true">
+/* V2 Regenerated Section CSS */
+.index-gallery-section {
+  position: relative;
+  background: linear-gradient(180deg, #0B0E13 0%, #070A0F 100%);
+  color: var(--text-light);
+  padding: 100px 16px;
+  overflow: hidden;
+}
+
+.index-gallery-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.index-gallery-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.index-gallery-header h2 {
+  font-family: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--text-light);
+  margin: 0 0 20px 0;
+  background: linear-gradient(90deg, #00D7E9 0%, #B9FF2E 55%, #CC1C6A 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.index-gallery-intro {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-light);
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.index-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: 240px;
+  gap: 16px;
+  direction: rtl;
+}
+
+.index-gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+.index-gallery-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 28px 90px rgba(0,0,0,0.72), 0 0 22px rgba(185,255,46,0.22);
+}
+
+.index-gallery-item-large {
+  grid-column: span 8;
+  grid-row: span 2;
+}
+
+.index-gallery-item-medium {
+  grid-column: span 4;
+  grid-row: span 1;
+}
+
+.index-gallery-item-tall {
+  grid-column: span 4;
+  grid-row: span 2;
+}
+
+.index-gallery-item-wide {
+  grid-column: span 8;
+  grid-row: span 1;
+}
+
+.index-gallery-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.index-gallery-image-wrapper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 500ms ease;
+}
+
+.index-gallery-item:hover .index-gallery-image-wrapper img {
+  transform: scale(1.08);
+}
+
+.index-gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(11,14,19,0) 0%, rgba(11,14,19,0.85) 100%);
+  opacity: 0;
+  transition: opacity 300ms ease;
+  display: flex;
+  align-items: flex-end;
+  padding: 24px;
+  pointer-events: none;
+}
+
+.index-gallery-item:hover .index-gallery-overlay {
+  opacity: 1;
+}
+
+.index-gallery-overlay-content {
+  width: 100%;
+}
+
+.index-gallery-label {
+  font-family: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-light);
+  display: inline-block;
+  padding: 8px 16px;
+  background: rgba(0,215,233,0.18);
+  border-radius: 4px;
+  border: 1px solid rgba(0,215,233,0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.index-gallery-decorative-glow {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(185,255,46,0.12) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+  .index-gallery-section {
+    padding: 80px 16px 60px;
+  }
+
+  .index-gallery-header {
+    margin-bottom: 40px;
+  }
+
+  .index-gallery-header h2 {
+    font-size: 28px;
+  }
+
+  .index-gallery-intro {
+    font-size: 16px;
+  }
+
+  .index-gallery-grid {
+    grid-template-columns: 1fr !important;
+    grid-auto-rows: 280px;
+    gap: 12px;
+  }
+
+  .index-gallery-item-large,
+  .index-gallery-item-medium,
+  .index-gallery-item-tall,
+  .index-gallery-item-wide {
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
+  }
+
+  .index-gallery-overlay {
+    opacity: 1;
+    background: linear-gradient(180deg, rgba(11,14,19,0) 40%, rgba(11,14,19,0.75) 100%);
+    padding: 16px;
+  }
+
+  .index-gallery-label {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+
+  .index-gallery-decorative-glow {
+    width: 400px;
+    height: 400px;
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+}
+</style>
     <link rel="stylesheet" href="/styles.css">
 
     <style id="zappy-dropdown-submenu-styles">
@@ -325,16 +526,16 @@
 
   <nav class="navbar" dir="rtl">
   <button class="mobile-toggle" id="mobileToggle" aria-label="תפריט">
-    <svg class="hamburger-icon" width="24" height="24" viewbox="0 0 24 24" fill="none">
+    <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
       <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
-    <svg class="close-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" style="display: none;">
+    <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display: none;">
       <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
   </button>
   
   <button class="phone-header-btn" data-phone="[business_phone]" aria-label="התקשר">
-    <svg width="20" height="20" viewbox="0 0 24 24" fill="currentColor">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
     </svg>
   </button>
@@ -808,14 +1009,14 @@
   
   <!-- Bottom Diagonal Divider with Neon Cyan Glow -->
   <div class="index-hero-divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewbox="0 0 1200 80" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <filter id="neon-glow">
-          <fegaussianblur stddeviation="3" result="coloredBlur"></fegaussianblur>
-          <femerge>
-            <femergenode in="coloredBlur"></femergenode>
-            <femergenode in="SourceGraphic"></femergenode>
-          </femerge>
+          <feGaussianBlur stdDeviation="3" result="coloredBlur"></feGaussianBlur>
+          <feMerge>
+            <feMergeNode in="coloredBlur"></feMergeNode>
+            <feMergeNode in="SourceGraphic"></feMergeNode>
+          </feMerge>
         </filter>
       </defs>
       <path d="M0,80 L0,20 L1200,60 L1200,80 Z" fill="#0B0E13"></path>
@@ -832,7 +1033,7 @@
     </div>
     <div class="index-features-grid zappy-preserve-css-grid" style="display: grid; grid-template-columns: 588px 588px;" id="zappy-auto-grid-1773652487967-uop4u3" data-zappy-auto-grid="true" data-original-item-width="588" data-original-gap="24px"><div class="index-features-card" id="zappy-drop-tf25zmtir">
         <div class="index-features-icon-wrapper" id="zappy-drop-6z65r6i8g">
-          <svg data-element-type="icon" data-icon-type="svg" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="" id="zappy-drop-8cgdcb47v">
+          <svg data-element-type="icon" data-icon-type="svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="" id="zappy-drop-8cgdcb47v">
             <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2" fill="none"></circle>
             <path d="M24 10 L24 24 L32 32" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
             <path d="M18 16 Q24 20 30 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"></path>
@@ -843,7 +1044,7 @@
         <p class="zappy-editable" id="zappy-drop-o54wr0pbr">התחממות קלילה של 10 דקות – מתיחות, ריצה קלה, כמה מסירות. בלי לחץ, בקצב שלכם.</p>
       </div><div class="index-features-card" id="zappy-drop-v4teu5nek">
         <div class="index-features-icon-wrapper" id="zappy-drop-a4on34pr0">
-          <svg data-element-type="icon" data-icon-type="svg" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="" id="zappy-drop-9rrs4wlsj">
+          <svg data-element-type="icon" data-icon-type="svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="" id="zappy-drop-9rrs4wlsj">
             <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2" fill="none"></circle>
             <path d="M14 24 L22 16 L26 20 L34 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
             <circle cx="14" cy="24" r="2" fill="currentColor"></circle>
@@ -857,7 +1058,7 @@
         <p class="zappy-editable" id="zappy-drop-pzhsea1g4" style="">קבוצות של מעט&nbsp; שחקנים, מגרש קטן, משחק זורם. כולם נוגעים בכדור, כולם נהנים.</p>
       </div><div class="index-features-card" id="zappy-drop-ecs9qdb3g">
         <div class="index-features-icon-wrapper" id="zappy-drop-sv3uim1h3">
-          <svg data-element-type="icon" data-icon-type="svg" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="" id="zappy-drop-7wt3ur9t0">
+          <svg data-element-type="icon" data-icon-type="svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="" id="zappy-drop-7wt3ur9t0">
             <path d="M14 28 Q18 24 22 28 T30 28 Q34 24 38 28" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"></path>
             <circle cx="20" cy="18" r="2" fill="currentColor"></circle>
             <circle cx="28" cy="18" r="2" fill="currentColor"></circle>
@@ -869,7 +1070,7 @@
         <p class="zappy-editable" id="zappy-drop-tbmnt75st">כאן אין שופטים, אין טבלת ליגה ואין ציפיות. רק אווירה חברית שבה כולם חלק מהחוויה.</p>
       </div><div class="index-features-card" id="zappy-drop-13omd0n30">
         <div class="index-features-icon-wrapper" id="zappy-drop-1mjit0hk8">
-          <svg data-element-type="icon" data-icon-type="svg" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="" id="zappy-drop-4u6rsgxxr">
+          <svg data-element-type="icon" data-icon-type="svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="" id="zappy-drop-4u6rsgxxr">
             <path d="M16 32 L16 20 C16 18 18 16 20 16 L28 16 C30 16 32 18 32 20 L32 32" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
             <ellipse cx="24" cy="32" rx="10" ry="4" stroke="currentColor" stroke-width="2" fill="none"></ellipse>
             <path d="M20 22 L20 26" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
@@ -883,13 +1084,13 @@
       </div></div>
   </div>
   <div class="index-features-divider-wrapper">
-    <svg aria-hidden="true" viewbox="0 0 1200 80" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
+    <svg aria-hidden="true" viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <defs>
-        <lineargradient id="index-features-wave-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <linearGradient id="index-features-wave-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
           <stop offset="0%" style="stop-color:rgba(204,28,106,0.4);stop-opacity:1"></stop>
           <stop offset="50%" style="stop-color:rgba(0,215,233,0.4);stop-opacity:1"></stop>
           <stop offset="100%" style="stop-color:rgba(204,28,106,0.4);stop-opacity:1"></stop>
-        </lineargradient>
+        </linearGradient>
       </defs>
       <path d="M0,80 L0,45 Q100,38 200,45 T400,45 Q500,38 600,45 T800,45 Q900,38 1000,45 T1200,45 L1200,80 Z" fill="var(--bg-light)"></path>
       <path d="M0,45 Q100,38 200,45 T400,45 Q500,38 600,45 T800,45 Q900,38 1000,45 T1200,45" stroke="url(#index-features-wave-gradient)" stroke-width="2" fill="var(--bg-light)"></path>
@@ -929,14 +1130,14 @@
       </div>
     </div></div>
   <div class="index-benefits-divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewbox="0 0 1200 80" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <filter id="benefits-glow">
-          <fegaussianblur stddeviation="2" result="coloredBlur"></fegaussianblur>
-          <femerge>
-            <femergenode in="coloredBlur"></femergenode>
-            <femergenode in="SourceGraphic"></femergenode>
-          </femerge>
+          <feGaussianBlur stdDeviation="2" result="coloredBlur"></feGaussianBlur>
+          <feMerge>
+            <feMergeNode in="coloredBlur"></feMergeNode>
+            <feMergeNode in="SourceGraphic"></feMergeNode>
+          </feMerge>
         </filter>
       </defs>
       <path d="M0,80 L0,42 Q40,38 80,44 T160,40 Q200,43 240,38 T320,42 Q360,39 400,43 T480,38 Q520,42 560,39 T640,43 Q680,38 720,42 T800,39 Q840,43 880,38 T960,42 Q1000,39 1040,43 T1120,38 Q1160,42 1200,40 L1200,80 Z" fill="#0B0E13" stroke="var(--primary)" stroke-width="0.5" filter="url(#benefits-glow)" opacity="0.95"></path>
@@ -944,42 +1145,72 @@
   </div>
 </section>
 
-<section class="index-gallery-section" data-layout-spec="בית-gallery" id="zappy-section-3">
+<section class="index-gallery-section" data-layout-spec="בית-gallery" data-zappy-section="true" id="zappy-section-3">
   <div class="index-gallery-container">
-    <div class="index-gallery-intro">
-      <h2 class="index-gallery-title">האווירה בשטח</h2>
-      <p class="index-gallery-description">כדורגל לילה רגוע, צחוקים, והרגע שאחרי המשחק – כשהקבוצה מתאספת עם בירה קרה ומחייכת. זה לא על תחרות, זה על חיבור, תנועה, והנאה טהורה.</p>
+    <div class="index-gallery-header">
+      <h2>האווירה בשטח</h2>
+      <p class="index-gallery-intro">כדורגל לילה רגוע, צחוקים, והרגע שאחרי המשחק – כשהקבוצה מתאספת עם בירה קרה ומחייכת. זה לא על תחרות, זה על חיבור, תנועה, והנאה טהורה.</p>
     </div>
-    <div class="index-gallery-grid zappy-preserve-css-grid" id="zappy-auto-grid-1773652487978-67yxo1" data-zappy-auto-grid="true" data-original-item-width="384" data-original-gap="24px" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));" data-zappy-explicit-columns="true"><div class="index-gallery-tile" id="zappy-drop-5h85ks53a">
-        <div data-zappy-zoom-wrapper="true" data-element-id="img-1773652487946-uqrunjcf4" data-element-type="image" data-zappy-zoom-wrapper-width="401px" data-zappy-zoom-wrapper-height="267px" data-zappy-zoom-wrapper-width-mode="px" style="position: relative !important; overflow: hidden !important; width: 401px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 267px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" class=""><img data-placeholder="index-gallery-image-1" data-context="Night football action under bright floodlights on a green turf pitch, players in casual sportswear running and enjoying the game, warm ambient glow, cinematic sports photography for men 35+ social football in Kiryat Ata" width="600" height="400" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23FF0083;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23FF008320;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='18' fill='white' text-anchor='middle' dy='.3em' font-weight='500'%3E%D7%9E%D7%A9%D7%97%D7%A7%20%D7%9B%D7%93%D7%95%D7%A8%D7%92%D7%9C%20%D7%9C%D7%99%D7%9C%D7%94%20%D7%AA%D7%97%D7%AA%20%D7%96%D7%A8%D7%A7%D7%95%D7%A8%D7%99%D7%9D%3C/text%3E%3C/svg%3E" alt="משחק כדורגל לילה תחת זרקורים" data-element-type="image" data-element-id="img-1773652487946-uqrunjcf4" class="zappy-editable-image" data-original-position="static" style="position: absolute !important; object-position: 50% 50%; margin: 0px !important; left: -2.5% !important; top: -2.56554% !important; width: 105% !important; height: 105.131% !important; max-width: none !important; max-height: none !important; display: block !important; object-fit: cover !important;" data-zappy-zoom="1.05"></div>
-        <div class="index-gallery-overlay" id="zappy-drop-46pjlphaq"></div>
-      </div><div class="index-gallery-tile" id="zappy-drop-cf74sghw8">
-        <img data-placeholder="index-gallery-image-2" data-context="Close-up of football boots on artificial turf with evening light, worn cleats showing use and character, cinematic detail shot for adult recreational football in Israel" width="600" height="400" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23FF0083;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23FF008320;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='18' fill='white' text-anchor='middle' dy='.3em' font-weight='500'%3E%D7%A0%D7%A2%D7%9C%D7%99%20%D7%9B%D7%93%D7%95%D7%A8%D7%92%D7%9C%20%D7%A2%D7%9C%20%D7%94%D7%93%D7%A9%D7%90%3C/text%3E%3C/svg%3E" alt="נעלי כדורגל על הדשא" data-element-type="content-image" data-element-id="img-1773652487946-f7choxax6" class="zappy-editable-image" data-original-position="static" style="position: relative;">
-        <div class="index-gallery-overlay" id="zappy-drop-m7h0a6p36"></div>
-      </div><div class="index-gallery-tile" id="zappy-drop-cf74sghw8-dup-1773652983941-cj1egj">
-        <img data-placeholder="index-gallery-image-2" data-context="Close-up of football boots on artificial turf with evening light, worn cleats showing use and character, cinematic detail shot for adult recreational football in Israel" width="600" height="400" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23FF0083;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23FF008320;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='18' fill='white' text-anchor='middle' dy='.3em' font-weight='500'%3E%D7%A0%D7%A2%D7%9C%D7%99%20%D7%9B%D7%93%D7%95%D7%A8%D7%92%D7%9C%20%D7%A2%D7%9C%20%D7%94%D7%93%D7%A9%D7%90%3C/text%3E%3C/svg%3E" alt="נעלי כדורגל על הדשא" data-element-type="content-image" data-element-id="img-1773652487946-f7choxax6-dup-1773652983941-cj1egj" class="zappy-editable-image" data-original-position="static" style="position: relative; cursor: pointer;">
-        <div class="index-gallery-overlay" id="zappy-drop-m7h0a6p36-dup-1773652983941-cj1egj"></div>
-      </div><div class="index-gallery-tile" id="zappy-drop-evf11cyp1" style="">
-        <img data-placeholder="index-gallery-image-3" data-context="Group of men aged 35-50 laughing together on a football pitch at night, casual sportswear, friendly atmosphere, genuine smiles and camaraderie, warm cinematic photography for social football community" width="600" height="400" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23FF0083;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23FF008320;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='18' fill='white' text-anchor='middle' dy='.3em' font-weight='500'%3E%D7%97%D7%91%D7%A8%D7%99%D7%9D%20%D7%A6%D7%95%D7%97%D7%A7%D7%99%D7%9D%20%D7%99%D7%97%D7%93%20%D7%91%D7%9E%D7%92%D7%A8%D7%A9%3C/text%3E%3C/svg%3E" alt="חברים צוחקים יחד במגרש" data-element-type="content-image" data-element-id="img-1773652487946-rihll47kn" class="zappy-editable-image" data-original-position="static" style="position: relative;">
-        <div class="index-gallery-overlay" id="zappy-drop-jgmovgcaj"></div>
-      </div><div class="index-gallery-tile" id="zappy-drop-94r8xf8k5" style="">
-        <img data-placeholder="index-gallery-image-4" data-context="Two men giving a high-five on a football pitch after a goal, evening light, joyful celebration moment, casual adult football atmosphere, cinematic sports photography in Israel" width="600" height="400" src="/assets/site-index-gallery-image-4.webp" alt="היי-פייב אחרי שער" data-element-type="content-image" data-element-id="img-1773652487946-v74rm6nw7" class="zappy-editable-image" data-original-position="static" style="position: relative;">
-        <div class="index-gallery-overlay" id="zappy-drop-xz8m3ie6e"></div>
-      </div></div>
+
+    <div class="index-gallery-grid">
+      <div class="index-gallery-item index-gallery-item-large">
+        <div class="index-gallery-image-wrapper">
+          <img alt="משחק כדורגל לילה תחת זרקורים" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23FF0083;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23FF008320;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='18' fill='white' text-anchor='middle' dy='.3em' font-weight='500'%3E%D7%9E%D7%A9%D7%97%D7%A7%20%D7%9B%D7%93%D7%95%D7%A8%D7%92%D7%9C%20%D7%9C%D7%99%D7%9C%D7%94%20%D7%AA%D7%97%D7%AA%20%D7%96%D7%A8%D7%A7%D7%95%D7%A8%D7%99%D7%9D%3C/text%3E%3C/svg%3E" data-placeholder="index-gallery-image-1" data-context="Night football action under bright floodlights on a green turf pitch, players in casual sportswear running and enjoying the game, warm ambient glow, cinematic sports photography for men 35+ social football in Kiryat Ata" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" data-zappy-editable-image="true">
+          <div class="index-gallery-overlay">
+            <div class="index-gallery-overlay-content">
+              <span class="index-gallery-label">תחת הזרקורים</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="index-gallery-item index-gallery-item-medium">
+        <div class="index-gallery-image-wrapper">
+          <img alt="נעלי כדורגל על הדשא" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23FF0083;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23FF008320;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='18' fill='white' text-anchor='middle' dy='.3em' font-weight='500'%3E%D7%A0%D7%A2%D7%9C%D7%99%20%D7%9B%D7%93%D7%95%D7%A8%D7%92%D7%9C%20%D7%A2%D7%9C%20%D7%94%D7%93%D7%A9%D7%90%3C/text%3E%3C/svg%3E" data-placeholder="index-gallery-image-2" data-context="Close-up of football boots on artificial turf with evening light, worn cleats showing use and character, cinematic detail shot for adult recreational football in Israel" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" data-zappy-editable-image="true">
+          <div class="index-gallery-overlay">
+            <div class="index-gallery-overlay-content">
+              <span class="index-gallery-label">מוכנים לשריקה</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="index-gallery-item index-gallery-item-medium">
+        <div class="index-gallery-image-wrapper">
+          <img alt="נעלי כדורגל על הדשא" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23FF0083;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23FF008320;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='18' fill='white' text-anchor='middle' dy='.3em' font-weight='500'%3E%D7%A0%D7%A2%D7%9C%D7%99%20%D7%9B%D7%93%D7%95%D7%A8%D7%92%D7%9C%20%D7%A2%D7%9C%20%D7%94%D7%93%D7%A9%D7%90%3C/text%3E%3C/svg%3E" data-placeholder="index-gallery-image-2" data-context="Close-up of football boots on artificial turf with evening light, worn cleats showing use and character, cinematic detail shot for adult recreational football in Israel" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" data-zappy-editable-image="true">
+          <div class="index-gallery-overlay">
+            <div class="index-gallery-overlay-content">
+              <span class="index-gallery-label">על הדשא</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="index-gallery-item index-gallery-item-tall">
+        <div class="index-gallery-image-wrapper">
+          <img alt="חברים צוחקים יחד במגרש" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23FF0083;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23FF008320;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='18' fill='white' text-anchor='middle' dy='.3em' font-weight='500'%3E%D7%97%D7%91%D7%A8%D7%99%D7%9D%20%D7%A6%D7%95%D7%97%D7%A7%D7%99%D7%9D%20%D7%99%D7%97%D7%93%20%D7%91%D7%9E%D7%92%D7%A8%D7%A9%3C/text%3E%3C/svg%3E" data-placeholder="index-gallery-image-3" data-context="Group of men aged 35-50 laughing together on a football pitch at night, casual sportswear, friendly atmosphere, genuine smiles and camaraderie, warm cinematic photography for social football community" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" data-zappy-editable-image="true">
+          <div class="index-gallery-overlay">
+            <div class="index-gallery-overlay-content">
+              <span class="index-gallery-label">רגעי חיבור</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="index-gallery-item index-gallery-item-wide">
+        <div class="index-gallery-image-wrapper">
+          <img alt="היי-פייב אחרי שער" src="/assets/site-index-gallery-image-4.webp" data-placeholder="index-gallery-image-4" data-context="Two men giving a high-five on a football pitch after a goal, evening light, joyful celebration moment, casual adult football atmosphere, cinematic sports photography in Israel" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" data-zappy-editable-image="true">
+          <div class="index-gallery-overlay">
+            <div class="index-gallery-overlay-content">
+              <span class="index-gallery-label">חגיגת שער</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="index-gallery-divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewbox="0 0 1200 60" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <lineargradient id="index-gallery-divider-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" style="stop-color:#00D4FF;stop-opacity:1"></stop>
-          <stop offset="40%" style="stop-color:#00D4FF;stop-opacity:0.6"></stop>
-          <stop offset="70%" style="stop-color:#00D4FF;stop-opacity:0.2"></stop>
-          <stop offset="100%" style="stop-color:#00D4FF;stop-"></stop>
-        </lineargradient>
-      </defs>
-      <path d="M0,60 L0,30 L400,30 L410,28 L420,32 L430,29 L440,31 L450,30 L800,30 L810,28 L820,32 L830,29 L840,31 L850,30 L1200,30 L1200,60 Z" fill="var(--bg-light)"></path>
-    </svg>
-  </div>
+
+  <div class="index-gallery-decorative-glow"></div>
 </section>
 
 <section class="index-testimonials-section" data-layout-spec="בית-testimonials">
@@ -1011,14 +1242,14 @@
   </div>
   
   <div class="index-testimonials-divider-wrapper">
-    <svg aria-hidden="true" viewbox="0 0 1200 100" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
+    <svg aria-hidden="true" viewBox="0 0 1200 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <filter id="magenta-glow">
-          <fegaussianblur stddeviation="3" result="coloredBlur"></fegaussianblur>
-          <femerge>
-            <femergenode in="coloredBlur"></femergenode>
-            <femergenode in="SourceGraphic"></femergenode>
-          </femerge>
+          <feGaussianBlur stdDeviation="3" result="coloredBlur"></feGaussianBlur>
+          <feMerge>
+            <feMergeNode in="coloredBlur"></feMergeNode>
+            <feMergeNode in="SourceGraphic"></feMergeNode>
+          </feMerge>
         </filter>
       </defs>
       <path d="M0,100 L0,40 Q150,35 300,42 T600,30 Q750,38 900,42 T1200,40 L1200,100 Z" fill="#0B0E13" stroke="rgba(255,45,149,0.35)" stroke-width="1" filter="url(#magenta-glow)"></path>
@@ -1078,13 +1309,13 @@
   </div>
 
   <div class="index-stats-section__divider-wrapper">
-    <svg aria-hidden="true" viewbox="0 0 1200 100" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
+    <svg aria-hidden="true" viewBox="0 0 1200 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <defs>
-        <lineargradient id="stats-divider-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <linearGradient id="stats-divider-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
           <stop offset="0%" style="stop-color:var(--bg-light);stop-opacity:1"></stop>
           <stop offset="85%" style="stop-color:var(--bg-light);stop-opacity:1"></stop>
           <stop offset="100%" style="stop-color:var(--accent);stop-opacity:0.4"></stop>
-        </lineargradient>
+        </linearGradient>
       </defs>
       <path d="M0,100 L0,70 L1020,30 L1200,15 L1200,100 Z" fill="var(--bg-light)"></path>
     </svg>
@@ -1121,7 +1352,7 @@
           
           <button type="submit" class="index-contact-submit-btn">
             <span>שלחו הודעה</span>
-            <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <path d="M12 5L7 10L12 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
             </svg>
           </button>
@@ -1147,12 +1378,12 @@
   </div>
   
   <div class="index-contact-divider-wrapper">
-    <svg aria-hidden="true" viewbox="0 0 1200 100" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg" class="index-contact-divider-svg">
+    <svg aria-hidden="true" viewBox="0 0 1200 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" class="index-contact-divider-svg">
       <defs>
-        <lineargradient id="index-contact-divider-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+        <linearGradient id="index-contact-divider-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
           <stop offset="0%" style="stop-color:#F2F4F7;stop-opacity:1"></stop>
           <stop offset="100%" style="stop-color:#0B0E13;stop-opacity:1"></stop>
-        </lineargradient>
+        </linearGradient>
       </defs>
       <path d="M0,100 L0,0 L1200,0 L1200,100 Z" fill="#0B0E13"></path>
       <line x1="0" y1="99" x2="1200" y2="99" stroke="#00D4FF" stroke-width="2"></line>
