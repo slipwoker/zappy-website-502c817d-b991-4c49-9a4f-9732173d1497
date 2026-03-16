@@ -1,35 +1,45 @@
-# Business — Generative Engine Optimization Map
+# פאפא-פס — Generative Engine Optimization Map
+
+> Papa-Pas is a social football experience for men 35+ in Kiryat Ata, offering a relaxed, fun atmosphere where participants can exercise lightly, make new friends, and end each session with cold beer and laughter. The vibe is casual, friendly, and pressure-free - focusing on movement, social connection, and enjoyment rather than competition. It's designed for beginners who want to stay active while having a good time in a welcoming community setting.
 
 ---
 
 ## Pages
 
 ### בית
-https://example.com
+https://papa-pas.zappy5.app
 חוג כדורגל למבוגרים קריות עם אווירה נינוחה וכיפית! פעילות גופנית קלילה, חברויות חדשות ובירה קרה. הצטרפו לקהילה החברתית של פאפא-פס בקריית אתא
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://example.com/privacy
+https://papa-pas.zappy5.app/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://example.com/terms
+https://papa-pas.zappy5.app/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://example.com/accessibility
+https://papa-pas.zappy5.app/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
 
 # Business Context (for LLM understanding)
 
-## About Business
+## About פאפא-פס
+Papa-Pas is a social football experience for men 35+ in Kiryat Ata, offering a relaxed, fun atmosphere where participants can exercise lightly, make new friends, and end each session with cold beer and laughter. The vibe is casual, friendly, and pressure-free - focusing on movement, social connection, and enjoyment rather than competition. It's designed for beginners who want to stay active while having a good time in a welcoming community setting.
+
+## Target Audience
+גברים בני 35 ומעלה בקרית אתא
+
+## Industry
+ספורט ופנאי
+
 ---
 
 # Additional Resources
 
-- **Sitemap**: https://example.com/sitemap.xml
-- **Robots.txt**: https://example.com/robots.txt
+- **Sitemap**: https://papa-pas.zappy5.app/sitemap.xml
+- **Robots.txt**: https://papa-pas.zappy5.app/robots.txt
