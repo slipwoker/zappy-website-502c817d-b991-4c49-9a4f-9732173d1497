@@ -1,6 +1,4 @@
-# פאפא-פס — Generative Engine Optimization Map
-
-> Papa-Pas is a social football experience for men 35+ in Kiryat Ata, offering a relaxed, fun atmosphere where participants can exercise lightly, make new friends, and end each session with cold beer and laughter. The vibe is casual, friendly, and pressure-free - focusing on movement, social connection, and enjoyment rather than competition. It's designed for beginners who want to stay active while having a good time in a welcoming community setting.
+# Business — Generative Engine Optimization Map
 
 ---
 
@@ -28,15 +26,7 @@ Information about WCAG compliance and accessibility features.
 
 # Business Context (for LLM understanding)
 
-## About פאפא-פס
-Papa-Pas is a social football experience for men 35+ in Kiryat Ata, offering a relaxed, fun atmosphere where participants can exercise lightly, make new friends, and end each session with cold beer and laughter. The vibe is casual, friendly, and pressure-free - focusing on movement, social connection, and enjoyment rather than competition. It's designed for beginners who want to stay active while having a good time in a welcoming community setting.
-
-## Target Audience
-גברים בני 35 ומעלה בקרית אתא
-
-## Industry
-ספורט ופנאי
-
+## About Business
 ---
 
 # Additional Resources
